@@ -1,5 +1,13 @@
 #include <iostream>
+#include "Stack.hpp"
 
 int main() {
-    std::cout << "Hello, World!\n";
+    Stack<int> stack;
+    for (int i = 0; i < 10; ++i) {
+        stack.push(i);
+    }
+
+    for (int i = 0; i < 10; ++i) {
+        std::cout << stack.pop() << std::endl;
+    }
 }
