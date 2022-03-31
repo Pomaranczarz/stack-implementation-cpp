@@ -43,11 +43,11 @@ public:
         return m_data.emplace_back(args...);
     }
 
-    ref_type top() {
+    [[nodiscard]] ref_type top() {
         return m_data.back();
     }
 
-    const_ref_type top() const {
+    [[nodiscard]] const_ref_type top() const {
         return m_data.back();
     }
 
